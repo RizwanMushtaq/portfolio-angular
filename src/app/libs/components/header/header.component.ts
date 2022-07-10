@@ -21,21 +21,13 @@ export class HeaderComponent implements OnInit {
   scrollToLandingPage() {
     this.isOpen = !this.isOpen;
     this.jumpToLandingPage.emit();
-    // @ts-ignore
-    // document
-    //   .getElementById('LandingPage')
-    //   .scrollIntoView({ behavior: 'smooth' });
   }
   scrollToProjects() {
     this.isOpen = !this.isOpen;
     this.jumpToProjects.emit();
-    // @ts-ignore
-    // document.getElementById('Projects').scrollIntoView({ behavior: 'smooth' });
   }
-  scrollToContact() {
-    this.isOpen = !this.isOpen;
-    this.jumpToContact.emit();
-    // @ts-ignore
-    // document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' });
-  }
+  // scrollToContact() {
+  //   this.isOpen = !this.isOpen;
+  //   this.jumpToContact.emit();
+  // }
 }

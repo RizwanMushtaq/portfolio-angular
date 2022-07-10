@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private scroller: ViewportScroller) {}
 
   ngOnInit() {
-    this.scroller.scrollToAnchor('landingPage');
+    // this.scroller.scrollToAnchor('landingPage');
   }
 
   onJumpToLandingPage() {

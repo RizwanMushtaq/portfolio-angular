@@ -3,13 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  gotoLinkedIn() {
+    window.open('https://www.linkedin.com/in/rizwan-mushtaq-dhudhaal/');
   }
 
+  gotoGithub() {
+    window.open('https://github.com/RizwanMushtaq');
+  }
 }
