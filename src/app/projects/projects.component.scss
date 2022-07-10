@@ -10,11 +10,15 @@
   .projects-header {
     width: 10rem;
     height: 4rem;
-    margin-top: 2rem;
+    margin: 3rem 0 3rem 0;
 
     img {
       width: 100%;
       height: 100%;
     }
+  }
+
+  .projects-body {
+    color: black;
   }
 }
