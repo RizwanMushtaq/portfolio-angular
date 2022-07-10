@@ -8,6 +8,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { LibsModule } from './libs/libs.module';
 import { ComponentsModule } from './libs/components/components.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,9 @@ import { ComponentsModule } from './libs/components/components.module';
     HomeComponent,
     ProjectsComponent,
     ContactComponent,
+    LandingPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, LibsModule, ComponentsModule],
+  imports: [BrowserModule, AppRoutingModule, LibsModule, ComponentsModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

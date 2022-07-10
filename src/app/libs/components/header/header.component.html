@@ -1,1 +1,21 @@
-<p>header works!</p>
+<div class="header-wrapper">
+  <div
+    class="hamburger hamburger--slider"
+    [ngClass]="{ 'is-active': isOpen }"
+    (click)="clicked()"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </div>
+</div>
+<div *ngIf="isOpen" class="menu-wrapper">
+  <div class="menu-header">Rizwan Mushtaq</div>
+  <div class="menu-body">
+    <ul>
+      <li (click)="scrollToLandingPage()">Home</li>
+      <li (click)="scrollToProjects()">Projects</li>
+      <li (click)="scrollToContact()">Contact</li>
+    </ul>
+  </div>
+</div>

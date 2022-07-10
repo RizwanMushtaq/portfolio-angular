@@ -1,0 +1,55 @@
+$hamburger-padding-x: 10px !default;
+$hamburger-padding-y: 10px !default;
+$hamburger-layer-width: 19px !default;
+$hamburger-layer-height: 2px !default;
+$hamburger-layer-spacing: 4px !default;
+
+$hamburger-layer-color: #fff !default;
+$hamburger-layer-border-radius: 1px !default;
+$hamburger-hover-opacity: 0.9 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+.header-wrapper {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu-wrapper {
+  background-color: black;
+  opacity: 0.6;
+  width: 300px;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  padding: 20px;
+  text-align: left;
+
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+  }
+}
