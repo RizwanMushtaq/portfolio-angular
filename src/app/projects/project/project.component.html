@@ -1,0 +1,61 @@
+<div class="card-wrapper">
+  <div class="img-wrapper">
+    <img src="{{ project.photo }}" alt="..." />
+  </div>
+  <div class="heading-wrapper">
+    <h5>{{ project.title }}</h5>
+  </div>
+  <div class="description-wrapper">
+    <p>
+      {{ project.description }}
+    </p>
+  </div>
+  <div class="buttons-wrapper">
+    <p (click)="openLink(project.demoLink)">Live Demo</p>
+    <p (click)="openLink(project.codeLink)">Code</p>
+  </div>
+  <!--  &lt;!&ndash;tech-wrapper&ndash;&gt;-->
+  <!--  <div class="tech-wrapper">-->
+  <!--    <p>Tech Stack</p>-->
+  <!--    <img-->
+  <!--      src="../../assets/chevron-compact-down.svg"-->
+  <!--      alt="..."-->
+  <!--      id="{{ project.id }}"-->
+  <!--      (click)="showTechnologies()"-->
+  <!--      *ngIf="!areTechnologiesShown"-->
+  <!--    />-->
+  <!--    <img-->
+  <!--      src="../../assets/chevron-compact-up.svg"-->
+  <!--      alt="..."-->
+  <!--      id="{{ project.id }}"-->
+  <!--      (click)="showTechnologies()"-->
+  <!--      *ngIf="areTechnologiesShown"-->
+  <!--    />-->
+  <!--  </div>-->
+  <!--  <div class="list-wrapper" *ngIf="areTechnologiesShown">-->
+  <!--    <ul *ngFor="let li of project.technologies">-->
+  <!--      <li>{{ li }}</li>-->
+  <!--    </ul>-->
+  <!--  </div>-->
+  <!--  &lt;!&ndash;feature-wrapper&ndash;&gt;-->
+  <!--  <div class="feature-wrapper">-->
+  <!--    <p>Features</p>-->
+  <!--    <img-->
+  <!--      src="../../assets/chevron-compact-down.svg"-->
+  <!--      alt="..."-->
+  <!--      (click)="showFeatures()"-->
+  <!--      *ngIf="!areFeaturesShown"-->
+  <!--    />-->
+  <!--    <img-->
+  <!--      src="../../assets/chevron-compact-up.svg"-->
+  <!--      alt="..."-->
+  <!--      (click)="showFeatures()"-->
+  <!--      *ngIf="areFeaturesShown"-->
+  <!--    />-->
+  <!--  </div>-->
+  <!--  <div class="list-wrapper" *ngIf="areFeaturesShown">-->
+  <!--    <ul *ngFor="let li of project.features">-->
+  <!--      <li>{{ li }}</li>-->
+  <!--    </ul>-->
+  <!--  </div>-->
+</div>

@@ -10,6 +10,7 @@ import { LibsModule } from './libs/libs.module';
 import { ComponentsModule } from './libs/components/components.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ProjectsComponent,
     ContactComponent,
     LandingPageComponent,
+    ProjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, LibsModule, ComponentsModule, NgbModule],
   providers: [],

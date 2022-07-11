@@ -3,18 +3,8 @@
     <img src="../../assets/code-slash.svg" alt="code icon" />
   </div>
   <div class="projects-body">
-    <div class="card" style="width: 20rem">
-      <div class="card-img">
-        <img src="..." class="card-img-top" alt="..." />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+    <ng-container *ngFor="let project of projects">
+      <app-project [project]="project"></app-project>
+    </ng-container>
   </div>
 </div>
