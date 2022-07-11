@@ -33,6 +33,12 @@
     p {
       cursor: pointer;
       color: navy;
+      width: 96px;
+      border: 1px solid white;
+      text-align: center;
+    }
+    p:hover {
+      border: 1px solid blue;
     }
   }
 

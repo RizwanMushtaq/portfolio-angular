@@ -1,15 +1,14 @@
 import { Project } from '../../libs/types/project.interface';
-const doItNow_service_express_pic =
-  '../../assets/projects/doitnow-service-express.png';
+const doItNow_service_express_pic = '';
 
-export const DoItNowServiceExpress: Project = {
-  id: 4,
-  title: 'DoItNow Service (ExpressJS)',
+export const DoItNowServiceNest: Project = {
+  id: 2,
+  title: 'DoItNow Service (NestJS)',
   photo: doItNow_service_express_pic,
-  demoLink: 'https://doitnow-restapi-heroku.herokuapp.com/',
-  codeLink: 'https://github.com/RizwanMushtaq/doitnow_restapi_heroku',
+  demoLink: '',
+  codeLink: '',
   description: 'This service acts as RESTful API for doitnow Application.',
-  technologies: ['REST API', 'Node.js', 'Express.js', 'MySQL'],
+  technologies: ['REST API', 'NestJS', 'MySQL'],
   features: [
     'User Registration',
     'User login',
