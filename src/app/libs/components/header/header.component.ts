@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
   @Output() jumpToLandingPage = new EventEmitter();
   @Output() jumpToProjects = new EventEmitter();
   @Output() jumpToContact = new EventEmitter();
+  @Output() jumpToResume = new EventEmitter();
   isOpen = false;
 
   constructor() {}
@@ -25,6 +26,10 @@ export class HeaderComponent implements OnInit {
   scrollToProjects() {
     this.isOpen = !this.isOpen;
     this.jumpToProjects.emit();
+  }
+  scrollToResume() {
+    this.isOpen = !this.isOpen;
+    this.jumpToResume.emit();
   }
   // scrollToContact() {
   //   this.isOpen = !this.isOpen;

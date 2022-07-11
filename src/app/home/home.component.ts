@@ -23,4 +23,7 @@ export class HomeComponent implements OnInit {
   onJumpToContact() {
     this.scroller.scrollToAnchor('contact');
   }
+  onJumpToResume() {
+    this.scroller.scrollToAnchor('resume');
+  }
 }

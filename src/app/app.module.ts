@@ -11,6 +11,7 @@ import { ComponentsModule } from './libs/components/components.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProjectComponent } from './projects/project/project.component';
     ContactComponent,
     LandingPageComponent,
     ProjectComponent,
+    ResumeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, LibsModule, ComponentsModule, NgbModule],
   providers: [],
