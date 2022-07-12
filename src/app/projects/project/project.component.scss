@@ -3,23 +3,32 @@
   background-color: white;
   max-width: 300px;
   margin: 32px 16px;
-  //border: 1px solid red;
   border-radius: 2%;
   overflow: hidden;
-  //box-shadow: 4px 4px white;
+  filter: drop-shadow(0 0 16px);
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   div {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 
   .img-wrapper {
-    height: 300px;
-    width: 100%;
+    margin: 48px 0 32px 0;
+    height: 100px;
+    width: 100px;
     overflow: hidden;
 
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+  .img-wrapper:hover {
+    filter: drop-shadow(8px 8px #d7d4d4);
     img {
       width: 100%;
       height: 100%;

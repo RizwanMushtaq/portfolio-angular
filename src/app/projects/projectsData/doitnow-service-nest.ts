@@ -1,5 +1,5 @@
 import { Project } from '../../libs/types/project.interface';
-const doItNow_service_express_pic = '';
+const doItNow_service_express_pic = '../../assets/projects/doitnow-service.svg';
 
 export const DoItNowServiceNest: Project = {
   id: 2,

@@ -1,5 +1,5 @@
 import { Project } from '../../libs/types/project.interface';
-const doItNow_app_react_pic = '';
+const doItNow_app_react_pic = '../../assets/projects/doitnow-app.svg';
 
 export const DoItNowAppAngular: Project = {
   id: 1,

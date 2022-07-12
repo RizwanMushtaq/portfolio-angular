@@ -1,5 +1,5 @@
 import { Project } from '../../libs/types/project.interface';
-const doItNow_app_react_pic = '../../assets/projects/printmytweet-app.png';
+const doItNow_app_react_pic = '../../assets/projects/printmytweet-app.svg';
 
 export const PrintMyTweetApp: Project = {
   id: 5,
