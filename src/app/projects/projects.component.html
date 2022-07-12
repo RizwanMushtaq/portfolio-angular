@@ -1,10 +1,12 @@
 <div class="projects-wrapper">
-  <div class="projects-header">
-    <img src="../../assets/code-slash.svg" alt="code icon" />
-  </div>
-  <div class="projects-body">
-    <ng-container *ngFor="let project of projects">
-      <app-project [project]="project"></app-project>
-    </ng-container>
+  <div class="projects-content">
+    <div class="projects-header">
+      <img src="../../assets/code-slash.svg" alt="code icon" />
+    </div>
+    <div class="projects-body">
+      <ng-container *ngFor="let project of projects">
+        <app-project [project]="project"></app-project>
+      </ng-container>
+    </div>
   </div>
 </div>
