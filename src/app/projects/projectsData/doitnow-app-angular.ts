@@ -5,8 +5,8 @@ export const DoItNowAppAngular: Project = {
   id: 1,
   title: 'DoItNow App (Angular)',
   photo: doItNow_app_react_pic,
-  demoLink: '',
-  codeLink: '',
+  demoLink: 'https://doitnow-angular-app.netlify.app/login',
+  codeLink: 'https://github.com/RizwanMushtaq/doitnow-angular-app',
   description: 'This application renders a calender and show todo items',
   technologies: ['Angular', 'TypeScript', 'RxJS', 'CSS'],
   features: [

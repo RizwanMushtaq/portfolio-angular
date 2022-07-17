@@ -5,8 +5,8 @@ export const DoItNowServiceNest: Project = {
   id: 2,
   title: 'DoItNow Service (NestJS)',
   photo: doItNow_service_express_pic,
-  demoLink: '',
-  codeLink: '',
+  demoLink: 'https://doitnow-nest-js-service.herokuapp.com/',
+  codeLink: 'https://github.com/RizwanMushtaq/doitnow-nest-js-service',
   description: 'This service acts as RESTful API for doitnow Application.',
   technologies: ['REST API', 'NestJS', 'MySQL'],
   features: [
