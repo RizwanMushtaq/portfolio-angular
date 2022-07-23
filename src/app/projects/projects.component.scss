@@ -2,9 +2,12 @@
   width: 100%;
   min-height: 100vh;
   //height: 100vh;
-  margin: 3rem 0 0 0;
+  padding: 3rem 0 0 0;
 
-  background-image: linear-gradient(black, grey);
+  //background-image: linear-gradient(black, grey);
+  background: -webkit-linear-gradient(to bottom right, #00539c, #eea47fff);
+  background: -moz-linear-gradient(to bottom right, #00539c, #eea47fff);
+  background: linear-gradient(to bottom right, #00539c, #eea47fff);
 
   display: flex;
   flex-direction: column;
