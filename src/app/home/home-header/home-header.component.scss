@@ -1,9 +1,11 @@
+@import "src/assets/scss/web-app-variables";
+
 /**************************
  Mobile First css start
 *************************/
 .header-wrapper {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 36px auto;
 
   display: flex;
   justify-content: center;
@@ -16,17 +18,18 @@
       line-height: 36px;
 
       .dot {
-        color: red;
+        color: $primary;
       }
     }
   }
   .text2-wrapper {
     margin-left: -50px;
+    margin-top: 6px;
     .p {
       font-size: 13px;
       line-height: 13px;
       .dot {
-        color: red;
+        color: $primary;
       }
     }
   }
