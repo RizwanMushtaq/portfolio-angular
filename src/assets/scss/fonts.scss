@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+    url('../fonts/Inter/static/Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: local('Inter-SemiBold'),
+    url('../fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter-Bold';
+  src: local('Inter-Bold'),
+    url('../fonts/Inter/static/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans'),
+    url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: local('OpenSans-SemiBold'),
+    url('../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-SemiBoldItalic';
+  src: local('OpenSans-SemiBoldItalic'),
+    url('../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf')
+      format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('Roboto-Medium'),
+    url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}

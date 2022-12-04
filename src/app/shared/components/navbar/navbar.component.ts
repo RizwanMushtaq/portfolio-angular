@@ -1,18 +1,17 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class NavbarComponent implements OnInit {
   @Output() jumpToLandingPage = new EventEmitter();
   @Output() jumpToProjects = new EventEmitter();
   @Output() jumpToContact = new EventEmitter();
   @Output() jumpToResume = new EventEmitter();
-  isOpen = false;
+  public isOpen = false;
 
-  constructor() {}
   ngOnInit(): void {}
 
   clicked() {
@@ -31,8 +30,4 @@ export class HeaderComponent implements OnInit {
     this.isOpen = !this.isOpen;
     this.jumpToResume.emit();
   }
-  // scrollToContact() {
-  //   this.isOpen = !this.isOpen;
-  //   this.jumpToContact.emit();
-  // }
 }

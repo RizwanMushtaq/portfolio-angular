@@ -1,0 +1,109 @@
+$hamburger-padding-x: 10px !default;
+$hamburger-padding-y: 10px !default;
+$hamburger-layer-width: 19px !default;
+$hamburger-layer-height: 2px !default;
+$hamburger-layer-spacing: 4px !default;
+
+$hamburger-layer-color: black !default;
+$hamburger-layer-border-radius: 1px !default;
+$hamburger-hover-opacity: 0.9 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+/**************************
+ Mobile First css start
+*************************/
+.header-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .hamburger-wrapper {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99;
+  }
+  .navbar-wrapper {
+    display: none;
+
+    padding: 32px;
+
+    .ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 24px;
+
+      .logo-wrapper {
+        width: 32px;
+        height: 32px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .menu-wrapper {
+    width: 100%;
+    text-align: left;
+
+    .menu-body {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+        }
+
+        li:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/**************************
+ Mobile First css end
+*************************/
+/**************************
+ Responsive css starts
+*************************/
+@media screen and (min-width: 320px) {
+}
+@media screen and (min-width: 567px) {
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 767px) {
+  .header-wrapper {
+    .hamburger-wrapper {
+      display: none;
+    }
+    .menu-wrapper {
+      display: none;
+    }
+    .navbar-wrapper {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+}
+@media screen and (min-width: 991px) {
+}
+@media screen and (min-width: 1440px) {
+}
+/**************************
+ Responsive css ends
+*************************/

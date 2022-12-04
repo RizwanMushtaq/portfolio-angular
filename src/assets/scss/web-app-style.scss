@@ -1,0 +1,152 @@
+@import 'web-app-variables';
+
+/**************************
+ general css start
+*************************/
+::selection {
+  background-color: $white;
+  color: $black;
+}
+
+body {
+  font-family: Inter, OpenSans, SansSerif;
+  font-style: normal;
+  font-size: 20px;
+
+  background-color: $white;
+  color: $black;
+
+  position: relative;
+  overflow-x: hidden;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea {
+  font-family: Inter, OpenSans, SansSerif;
+  font-style: normal;
+  text-align: left;
+  line-height: normal;
+
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  @media screen and (min-width: 320px) {
+    font-size: calc(22px + (48 - 22) * ((100vw - 300px) / (1440 - 300)));
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  @media screen and (min-width: 320px) {
+    font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1440 - 300)));
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+h3 {
+  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1440 - 300)));
+}
+h4 {
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1440 - 300)));
+}
+h5 {
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1440 - 300)));
+}
+h6 {
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1440 - 300)));
+}
+p,
+input,
+textarea,
+a,
+label {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: 320px) {
+    font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1440 - 300)));
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    font-size: 14px;
+  }
+}
+/**************************
+ general css end
+*************************/

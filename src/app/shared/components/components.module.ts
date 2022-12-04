@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import {
@@ -10,8 +10,8 @@ import {
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, ErrorPageComponent],
-  exports: [HeaderComponent, FooterComponent, ErrorPageComponent],
+  declarations: [NavbarComponent, FooterComponent, ErrorPageComponent],
+  exports: [NavbarComponent, FooterComponent, ErrorPageComponent],
   imports: [CommonModule, NgbCollapseModule, RouterModule, NgbDropdownModule],
 })
 export class ComponentsModule {}

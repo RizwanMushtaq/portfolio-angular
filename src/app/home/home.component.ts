@@ -15,15 +15,15 @@ export class HomeComponent implements OnInit {
   }
 
   onJumpToLandingPage() {
-    this.scroller.scrollToAnchor('landingPage');
+    // this.scroller.scrollToAnchor('landingPage');
   }
   onJumpToProjects() {
-    this.scroller.scrollToAnchor('projects');
+    // this.scroller.scrollToAnchor('projects');
   }
   onJumpToContact() {
-    this.scroller.scrollToAnchor('contact');
+    // this.scroller.scrollToAnchor('contact');
   }
   onJumpToResume() {
-    this.scroller.scrollToAnchor('resume');
+    // this.scroller.scrollToAnchor('resume');
   }
 }
