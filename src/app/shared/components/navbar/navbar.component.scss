@@ -14,7 +14,7 @@ $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 /**************************
  Mobile First css start
 *************************/
-.header-wrapper {
+.component-wrapper {
   max-width: 1440px;
   margin: 0 auto;
 
@@ -86,7 +86,7 @@ $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 @media screen and (min-width: 600px) {
 }
 @media screen and (min-width: 767px) {
-  .header-wrapper {
+  .component-wrapper {
     .hamburger-wrapper {
       display: none;
     }
