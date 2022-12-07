@@ -1,0 +1,343 @@
+@import "src/assets/scss/web-app-variables";
+
+/**************************
+ Mobile First css starts
+*************************/
+.contact-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  .heading-wrapper {
+    margin-bottom: 12px;
+
+    .colon {
+      color: $primary;
+    }
+  }
+
+  .form {
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+
+      .form-inner-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+
+        .input-wrapper {
+          width: 100%;
+
+          input {
+            border: 2px solid $black;
+            border-radius: calc(
+              15px + (30 - 15) * ((100vw - 300px) / (1440 - 300))
+            );
+            padding: 15px 30px;
+
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+
+            width: 100%;
+            height: 55px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .red-border {
+            &.ng-invalid {
+              border: 3px solid $primary;
+            }
+          }
+        }
+
+        .text-area-wrapper {
+          width: 100%;
+          height: 201px;
+
+          textarea {
+            border: 2px solid $black;
+            border-radius: calc(
+              15px + (30 - 15) * ((100vw - 300px) / (1440 - 300))
+            );
+            padding: 15px 30px;
+
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+
+            width: 100%;
+            height: 100%;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .red-border {
+            &.ng-invalid {
+              border: 3px solid $primary;
+            }
+          }
+        }
+      }
+
+      .form-submit {
+        .button {
+          width: 203px;
+          height: 70px;
+
+          font-family: Inter-Bold;
+
+          background-color: $primary;
+          color: $white;
+          border-radius: 30px;
+          outline: none;
+          border: none;
+
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
+        }
+        .disabled {
+          &:hover,
+          &:focus,
+          &:active {
+            transition: none;
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error-wrapper {
+  color: $primary;
+  padding-left: 16px;
+
+  p {
+    font-size: 11px;
+  }
+}
+
+.failed-alert-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+
+  padding: 24px;
+  border-radius: 10px;
+
+  font-family: Inter;
+  background-color: whitesmoke;
+  color: $black;
+
+  .closeButtonWrapper {
+    display: flex;
+
+    gap: 4px;
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 24px;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.contact-creation-success-wrapper {
+  margin: auto;
+  padding: 36px 0;
+  width: 100%;
+
+  .success-alert-wrapper {
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    padding: 48px 24px 48px 24px;
+    border-radius: 10px;
+
+    font-family: Inter;
+    background-color: whitesmoke;
+    color: $black;
+
+    .textDiv {
+      flex: 1;
+      text-align: center;
+    }
+
+    .closeButtonWrapper {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 4px;
+
+      background-color: black;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      .icon-wrapper {
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+/**************************
+ Mobile First css ends
+*************************/
+/**************************
+ Responsive css starts
+*************************/
+@media screen and (min-width: 320px) {
+  .contact-wrapper {
+    padding-bottom: calc(16px + (94 - 16) * ((100vw - 320px) / (1440 - 320)));
+    .form {
+      .form-row {
+        .form-submit {
+          .bottom {
+            font-size: calc(
+              18px + (24 - 18) * ((100vw - 300px) / (1440 - 300))
+            );
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .contact-wrapper {
+    .form {
+      width: 75%;
+      .form-row {
+        .form-inner-container {
+          .input-wrapper {
+            input {
+              height: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-creation-success-wrapper {
+    .success-alert-wrapper {
+      .closeButtonWrapper {
+        .icon-wrapper {
+          height: 36px;
+        }
+      }
+    }
+  }
+
+  .failed-alert-wrapper {
+    .closeButtonWrapper {
+      .icon-wrapper {
+        height: 36px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 991px) {
+  .contact-wrapper {
+    .form {
+      width: 784px;
+      .form-row {
+        .form-inner-container {
+          gap: 16px;
+          .input-wrapper {
+            width: 384px;
+
+            input {
+              height: 73px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-creation-success-wrapper {
+    width: 784px;
+    height: 515px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-wrapper {
+    padding-bottom: 94px;
+
+    .form {
+      .form-row {
+        .form-inner-container {
+          .input-wrapper {
+            input {
+              border-radius: 30px;
+            }
+          }
+
+          .text-area-wrapper {
+            textarea {
+              border-radius: 30px;
+            }
+          }
+        }
+        .form-submit {
+          .button {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+/**************************
+ Responsive css ends
+*************************/

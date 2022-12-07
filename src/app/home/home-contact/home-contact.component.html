@@ -1,1 +1,133 @@
-<p>home-contact works!</p>
+<div class="contact-wrapper">
+  <div class="heading-wrapper">
+    <h1>Contact<span class="colon">:</span><br /></h1>
+  </div>
+
+  <ng-container *ngIf="!isContactCreationSuccess">
+    <form class="form" [formGroup]="contactForm" (ngSubmit)="submit()">
+      <div class="form-row">
+        <div class="form-inner-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="First Name"
+              formControlName="firstName"
+              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+            />
+            <ng-container *ngIf="isFormInValidSubmitted">
+              <ng-container *ngIf="contactForm.controls.firstName.invalid">
+                <div class="error-wrapper">
+                  <p>Please enter your first name</p>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Last Name"
+              formControlName="lastName"
+              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+            />
+            <ng-container *ngIf="isFormInValidSubmitted">
+              <ng-container *ngIf="contactForm.controls.lastName.invalid">
+                <div class="error-wrapper">
+                  <p>Please enter your last name</p>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+        </div>
+        <div class="form-inner-container">
+          <div class="input-wrapper">
+            <input
+              type="tel"
+              placeholder="Phone"
+              formControlName="phoneNumber"
+              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+            />
+            <ng-container *ngIf="isFormInValidSubmitted">
+              <ng-container *ngIf="contactForm.controls.phoneNumber.invalid">
+                <div class="error-wrapper">
+                  <p>Please enter your valid phone number</p>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              placeholder="Email"
+              formControlName="email"
+              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+            />
+            <ng-container *ngIf="isFormInValidSubmitted">
+              <ng-container *ngIf="contactForm.controls.email.invalid">
+                <div class="error-wrapper">
+                  <p>Please enter your valid email address</p>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+        </div>
+        <div class="form-inner-container">
+          <div class="text-area-wrapper -text-area">
+            <textarea
+              class=""
+              rows="6"
+              placeholder="Type your message here"
+              formControlName="messageText"
+              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+            ></textarea>
+            <ng-container *ngIf="isFormInValidSubmitted">
+              <ng-container *ngIf="contactForm.controls.messageText.invalid">
+                <div class="error-wrapper">
+                  <p>Please enter your message here</p>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+        </div>
+
+        <div
+          *ngIf="isContactCreationFailed"
+          class="failed-alert-wrapper"
+          role="alert"
+        >
+          <div>
+            <p>Your message was not sent!</p>
+          </div>
+          <div class="closeButtonWrapper" (click)="closeFailedAlert()">
+            <div class="icon-wrapper">
+              <img src="assets/images/contact/x.svg" alt="x-icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button
+            class="button btn-default btn-gradient m-0-auto"
+            [ngClass]="contactForm.invalid ? 'disabled' : ''"
+          >
+            Senden
+          </button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+
+  <ng-container *ngIf="isContactCreationSuccess">
+    <div class="contact-creation-success-wrapper">
+      <div class="success-alert-wrapper" role="alert">
+        <div class="textDiv">
+          <p>Your message was successfully sent!</p>
+        </div>
+        <div class="closeButtonWrapper" (click)="closeSuccessAlert()">
+          <div class="icon-wrapper">
+            <img src="assets/images/contact/x.svg" alt="x-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

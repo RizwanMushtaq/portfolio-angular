@@ -7,6 +7,7 @@ import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeComponent } from './home.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,12 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
     HomeAboutComponent,
     HomeContactComponent,
   ],
-  imports: [CommonModule, HomeRoutingModule, ComponentsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HomeRoutingModule,
+    ComponentsModule,
+  ],
 })
 export class HomeModule {}
