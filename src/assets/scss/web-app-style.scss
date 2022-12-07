@@ -7,6 +7,9 @@
   background-color: $white;
   color: $black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Inter, OpenSans, SansSerif;

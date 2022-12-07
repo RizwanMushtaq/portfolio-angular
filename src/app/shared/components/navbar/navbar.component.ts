@@ -7,9 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() jumpToLandingPage = new EventEmitter();
-  @Output() jumpToProjects = new EventEmitter();
+  @Output() jumpToAbout = new EventEmitter();
   @Output() jumpToContact = new EventEmitter();
-  @Output() jumpToResume = new EventEmitter();
   public isOpen = false;
 
   ngOnInit(): void {}
@@ -22,12 +21,12 @@ export class NavbarComponent implements OnInit {
     this.isOpen = !this.isOpen;
     this.jumpToLandingPage.emit();
   }
-  scrollToProjects() {
+  scrollToAbout() {
     this.isOpen = !this.isOpen;
-    this.jumpToProjects.emit();
+    this.jumpToAbout.emit();
   }
-  scrollToResume() {
+  scrollToContact() {
     this.isOpen = !this.isOpen;
-    this.jumpToResume.emit();
+    this.jumpToContact.emit();
   }
 }

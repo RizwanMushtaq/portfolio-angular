@@ -1,10 +1,8 @@
-<!--<h1 class="alert alert-info">Oops 😬 Web-App is under Construction</h1>-->
 <app-navbar
   (jumpToLandingPage)="onJumpToLandingPage()"
-  (jumpToProjects)="onJumpToProjects()"
+  (jumpToAbout)="onJumpToAbout()"
   (jumpToContact)="onJumpToContact()"
-  (jumpToResume)="onJumpToResume()"
 ></app-navbar>
-<app-home-header></app-home-header>
-<app-home-about></app-home-about>
-<app-home-contact></app-home-contact>
+<app-home-header id="landing-page"></app-home-header>
+<app-home-about id="about-section"></app-home-about>
+<app-home-contact id="contact-section"></app-home-contact>

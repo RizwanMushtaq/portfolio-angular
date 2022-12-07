@@ -10,20 +10,18 @@ import { ViewportScroller } from '@angular/common';
 export class HomeComponent implements OnInit {
   constructor(private router: Router, private scroller: ViewportScroller) {}
 
-  ngOnInit() {
-    // this.scroller.scrollToAnchor('landingPage');
-  }
+  ngOnInit() {}
 
   onJumpToLandingPage() {
-    // this.scroller.scrollToAnchor('landingPage');
+    // this.scroller.scrollToAnchor('landing-page');
+    this.router.navigate(['/'], { fragment: 'landing-page' });
   }
-  onJumpToProjects() {
-    // this.scroller.scrollToAnchor('projects');
+  onJumpToAbout() {
+    this.scroller.scrollToAnchor('about-section');
+    // this.router.navigate([''], { fragment: 'about-section' });
   }
   onJumpToContact() {
-    // this.scroller.scrollToAnchor('contact');
-  }
-  onJumpToResume() {
-    // this.scroller.scrollToAnchor('resume');
+    this.scroller.scrollToAnchor('contact-section');
+    // this.router.navigate([''], { fragment: 'contact-section' });
   }
 }
