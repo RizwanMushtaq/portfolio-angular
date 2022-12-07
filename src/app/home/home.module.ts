@@ -6,10 +6,15 @@ import { ComponentsModule } from '../shared/components/components.module';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeComponent } from './home.component';
-import { NavbarComponent } from '../shared/components/navbar/navbar.component';
+import { HomeContactComponent } from './home-contact/home-contact.component';
 
 @NgModule({
-  declarations: [HomeComponent, HomeHeaderComponent, HomeAboutComponent],
+  declarations: [
+    HomeComponent,
+    HomeHeaderComponent,
+    HomeAboutComponent,
+    HomeContactComponent,
+  ],
   imports: [CommonModule, HomeRoutingModule, ComponentsModule],
 })
 export class HomeModule {}
