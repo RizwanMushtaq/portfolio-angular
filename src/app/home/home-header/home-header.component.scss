@@ -1,7 +1,7 @@
 @import "src/assets/scss/web-app-variables";
 
 /**************************
- Mobile First css start
+ Mobile First css starts
 *************************/
 .header-wrapper {
   max-width: 1440px;
@@ -12,21 +12,14 @@
   align-items: center;
 
   .text1-wrapper {
-    .p {
-      font-family: Inter-SemiBold;
-      font-size: 36px;
-      line-height: 36px;
-
-      .dot {
-        color: $primary;
-      }
+    .dot {
+      color: $primary;
     }
   }
   .text2-wrapper {
     margin-left: -50px;
     margin-top: 6px;
     .p {
-      font-size: 13px;
       line-height: 13px;
       .dot {
         color: $primary;
@@ -35,22 +28,15 @@
   }
 }
 /**************************
- Mobile First css end
+ Mobile First css ends
 *************************/
 /**************************
  Responsive css starts
 *************************/
 @media screen and (min-width: 320px) {
   .header-wrapper {
-    .text1-wrapper {
-      .p {
-        font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1440 - 300)));
-        line-height: calc(36px + (72 - 36) * ((100vw - 300px) / (1440 - 300)));
-      }
-    }
     .text2-wrapper {
       .p {
-        font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1440 - 300)));
         line-height: calc(13px + (20 - 13) * ((100vw - 300px) / (1440 - 300)));
       }
     }
@@ -68,15 +54,8 @@
 }
 @media screen and (min-width: 1440px) {
   .header-wrapper {
-    .text1-wrapper {
-      .p {
-        font-size: 72px;
-        line-height: 72px;
-      }
-    }
     .text2-wrapper {
       .p {
-        font-size: 20px;
         line-height: 20px;
       }
     }

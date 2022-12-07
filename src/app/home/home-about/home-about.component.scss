@@ -1,21 +1,19 @@
 @import "src/assets/scss/web-app-variables";
 
+/**************************
+ Mobile First css starts
+*************************/
 .about-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 42px;
+  padding-right: 42px;
 
   .heading-wrapper {
     margin-bottom: 12px;
-    .p {
-      font-family: Inter-SemiBold;
-      font-size: 36px;
-      line-height: 36px;
 
-      .colon {
-        color: $primary;
-      }
+    .colon {
+      color: $primary;
     }
   }
 
@@ -49,22 +47,16 @@
     padding: 32px 16px;
 
     .heading {
-      font-family: Inter-SemiBold;
-      font-size: 24px;
-      line-height: 24px;
       padding-bottom: 16px;
     }
   }
 
-  .education-wrapper {
+  .fun-facts-wrapper {
     margin-bottom: 12px;
     padding: 32px 16px;
     background-color: #f9fafb;
 
     .heading {
-      font-family: Inter-SemiBold;
-      font-size: 24px;
-      line-height: 24px;
       padding-bottom: 16px;
     }
 
@@ -73,3 +65,69 @@
     }
   }
 }
+/**************************
+ Mobile First css ends
+*************************/
+/**************************
+ Responsive css starts
+*************************/
+@media screen and (min-width: 480px) {
+  .about-wrapper {
+    .image-outer-wrapper {
+      .image-wrapper {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .about-wrapper {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    .heading-wrapper {
+      grid-row: 1/3;
+      grid-column: 1/6;
+    }
+    .image-outer-wrapper {
+      grid-row: 2/6;
+      grid-column: 8/13;
+    }
+    .description-wrapper {
+      grid-row: 3/6;
+      grid-column: 2/7;
+    }
+    .skills-wrapper {
+      height: fit-content;
+      width: fit-content;
+
+      grid-row: 7/11;
+      grid-column: 1/7;
+    }
+    .fun-facts-wrapper {
+      height: fit-content;
+      width: fit-content;
+      grid-row: 6/10;
+      grid-column: 8/13;
+    }
+  }
+}
+@media screen and (min-width: 991px) {
+  .about-wrapper {
+    .skills-wrapper {
+      padding: 32px 32px;
+
+      grid-column: 2/7;
+    }
+
+    .fun-facts-wrapper {
+      padding: 32px 32px;
+    }
+  }
+}
+/**************************
+ Responsive css ends
+*************************/
