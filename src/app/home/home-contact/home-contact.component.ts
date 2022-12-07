@@ -8,7 +8,7 @@ import { ContactFormPayload } from './home-contact.service';
   styleUrls: ['./home-contact.component.scss'],
 })
 export class HomeContactComponent {
-  public isContactCreationSuccess = true;
+  public isContactCreationSuccess = false;
   public isContactCreationFailed = false;
 
   public isFormInValidSubmitted: boolean;

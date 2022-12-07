@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   onJumpToLandingPage() {
-    // this.scroller.scrollToAnchor('landing-page');
-    this.router.navigate(['/'], { fragment: 'landing-page' });
+    this.scroller.scrollToAnchor('landing-page');
+    // this.router.navigate(['/'], { fragment: 'landing-page' });
   }
   onJumpToAbout() {
     this.scroller.scrollToAnchor('about-section');
