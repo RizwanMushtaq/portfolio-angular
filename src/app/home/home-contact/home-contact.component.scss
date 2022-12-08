@@ -239,11 +239,11 @@
 *************************/
 @media screen and (min-width: 320px) {
   .contact-wrapper {
-    padding-bottom: calc(16px + (94 - 16) * ((100vw - 320px) / (1440 - 320)));
+    padding-bottom: calc(16px + (48 - 16) * ((100vw - 320px) / (1440 - 320)));
     .form {
       .form-row {
         .form-submit {
-          .bottom {
+          .button {
             font-size: calc(
               18px + (24 - 18) * ((100vw - 300px) / (1440 - 300))
             );
@@ -312,7 +312,7 @@
 }
 @media screen and (min-width: 1440px) {
   .contact-wrapper {
-    padding-bottom: 94px;
+    padding-bottom: 48px;
 
     .form {
       .form-row {
