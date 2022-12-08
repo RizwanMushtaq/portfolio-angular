@@ -42,7 +42,7 @@
           <div class="input-wrapper">
             <input
               type="tel"
-              placeholder="Phone"
+              placeholder="Phone (optional)"
               formControlName="phoneNumber"
               [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
             />
@@ -71,14 +71,17 @@
           </div>
         </div>
         <div class="form-inner-container">
-          <div class="text-area-wrapper -text-area">
-            <textarea
-              class=""
-              rows="6"
-              placeholder="Type your message here"
-              formControlName="messageText"
-              [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
-            ></textarea>
+          <div class="text-area-wrapper">
+            <div>
+              <textarea
+                class=""
+                rows="6"
+                placeholder="Type your message here"
+                formControlName="messageText"
+                [ngClass]="isFormInValidSubmitted ? 'red-border' : ''"
+              ></textarea>
+            </div>
+
             <ng-container *ngIf="isFormInValidSubmitted">
               <ng-container *ngIf="contactForm.controls.messageText.invalid">
                 <div class="error-wrapper">

@@ -1,12 +1,27 @@
+/**************************
+ Mobile First css start
+*************************/
 .footer-wrapper {
-  width: 100%;
-  height: 10vh;
+  max-width: 1440px;
+  margin: 0 auto;
 
-  background: -webkit-linear-gradient(to bottom right, #00539c, #eea47fff);
-  background: -moz-linear-gradient(to bottom right, #00539c, #eea47fff);
-  background: linear-gradient(to right, #00539c, #eea47fff 50%, #00539c);
+  height: 52px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/**************************
+ Mobile First css end
+*************************/
+/**************************
+ Responsive css starts
+*************************/
+@media screen and (min-width: 767px) {
+  .footer-wrapper {
+    height: 72px;
+  }
+}
+/**************************
+ Responsive css ends
+*************************/
